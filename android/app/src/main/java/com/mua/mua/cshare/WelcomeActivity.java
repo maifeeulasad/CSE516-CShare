@@ -5,6 +5,14 @@ import android.os.Bundle;
 
 public class WelcomeActivity extends AppCompatActivity {
 
+    /*
+
+
+    Mofazzol Hossain Titon - works here
+
+
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

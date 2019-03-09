@@ -5,6 +5,14 @@ import android.os.Bundle;
 
 public class LoginActivity extends AppCompatActivity {
 
+    /*
+
+
+    Rashedul Alam - works here
+
+
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
