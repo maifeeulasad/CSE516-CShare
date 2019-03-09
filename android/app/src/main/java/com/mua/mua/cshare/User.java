@@ -1,5 +1,7 @@
 package com.mua.mua.cshare;
 
+import java.util.Vector;
+
 public class User {
 
     /*
@@ -17,6 +19,7 @@ public class User {
     private String displayName;//can be changed once in a month to limit data usage, 01.xx.xxxx no need to store previous change date
     private int reputation;
     private UserType userType;
+    private Vector<Integer> ratings;
 
 
 }
