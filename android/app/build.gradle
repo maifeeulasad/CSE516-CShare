@@ -29,9 +29,12 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:17.0.0'
     implementation 'com.google.firebase:firebase-database:17.0.0'
 
+<<<<<<< HEAD
     //Circle imageview
     implementation 'de.hdodenhof:circleimageview:3.0.0'
 
+=======
+>>>>>>> 8af3bdd6c183dafb6dc5e84ef4fcb37b9c0d6128
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
