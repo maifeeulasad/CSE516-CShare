@@ -1,21 +1,15 @@
-package com.mua.mua.cshare;
+package com.mua.mua.cshare.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class WelcomeActivity extends AppCompatActivity {
+import com.mua.mua.cshare.R;
 
-    /*
-
-
-    Mofazzol Hossain Titon - works here
-
-
-     */
+public class Hit100Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
+        setContentView(R.layout.activity_hit100);
     }
 }

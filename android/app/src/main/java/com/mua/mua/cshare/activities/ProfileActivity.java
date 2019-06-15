@@ -1,13 +1,15 @@
-package com.mua.mua.cshare;
+package com.mua.mua.cshare.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Hit100Activity extends AppCompatActivity {
+import com.mua.mua.cshare.R;
+
+public class ProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hit100);
+        setContentView(R.layout.activity_profile);
     }
 }

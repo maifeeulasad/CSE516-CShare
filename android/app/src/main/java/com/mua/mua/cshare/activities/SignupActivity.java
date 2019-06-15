@@ -1,21 +1,15 @@
-package com.mua.mua.cshare;
+package com.mua.mua.cshare.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class UploadActivity extends AppCompatActivity {
+import com.mua.mua.cshare.R;
 
-    /*
-
-
-    Maifee Ul Asad - works here
-
-
-     */
+public class SignupActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_upload);
+        setContentView(R.layout.activity_signup);
     }
 }

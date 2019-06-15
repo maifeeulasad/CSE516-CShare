@@ -1,4 +1,4 @@
-package com.mua.mua.cshare;
+package com.mua.mua.cshare.activities;
 
 import java.util.Vector;
 

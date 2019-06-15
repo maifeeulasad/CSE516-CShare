@@ -1,7 +1,9 @@
-package com.mua.mua.cshare;
+package com.mua.mua.cshare.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.mua.mua.cshare.R;
 
 public class LoginActivity extends AppCompatActivity {
 

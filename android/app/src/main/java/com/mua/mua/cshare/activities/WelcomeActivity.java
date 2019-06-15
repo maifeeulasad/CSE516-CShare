@@ -1,14 +1,16 @@
-package com.mua.mua.cshare;
+package com.mua.mua.cshare.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class UploadSelectFileActivity extends AppCompatActivity {
+import com.mua.mua.cshare.R;
+
+public class WelcomeActivity extends AppCompatActivity {
 
     /*
 
 
-    Maifee Ul Asad - works here
+    Mofazzol Hossain Titon - works here
 
 
      */
@@ -16,6 +18,6 @@ public class UploadSelectFileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_upload_select_file);
+        setContentView(R.layout.activity_welcome);
     }
 }
