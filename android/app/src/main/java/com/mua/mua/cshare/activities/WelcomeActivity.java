@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.mua.mua.cshare.R;
@@ -56,5 +55,11 @@ public class WelcomeActivity extends AppCompatActivity {
                 startActivity(new Intent(WelcomeActivity.this, RegisterActivity.class));
             }
         });
+    }
+
+    public void back(View view) {
+        Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
+
     }
 }
