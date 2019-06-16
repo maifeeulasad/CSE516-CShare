@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activities.MainActivity"></activity>
+        <activity android:name=".activities.RecyclerViewActivity"></activity>
         <activity android:name=".activities.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,6 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--
         <activity android:name=".activities.Hit100Activity" />
         <activity android:name=".activities.SearchResultActivity" />
         <activity android:name=".activities.UploadSelectFileActivity" />
@@ -23,7 +26,8 @@
         <activity android:name=".activities.FileSelectionActivity" />
         <activity android:name=".activities.ProfileActivity" />
         <activity android:name=".activities.LoginActivity" />
-        <activity android:name=".activities.SignupActivity"></activity>
+        <activity android:name=".activities.SignupActivity" />
+        -->
     </application>
 
 </manifest>
