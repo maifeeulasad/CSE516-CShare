@@ -10,12 +10,13 @@ import android.widget.Toast;
 import com.mua.mua.cshare.R;
 import com.mua.mua.cshare.adapters.RVAdapter;
 import com.mua.mua.cshare.model.Content;
+import com.mua.mua.cshare.model.ContentHelper;
 import com.mua.mua.cshare.observer.CustomItemClickListener;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecyclerViewActivity extends Activity {
+public class Hit100Activity extends Activity {
 
     private List<Content> contents;
     private RecyclerView rv;
@@ -24,7 +25,7 @@ public class RecyclerViewActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.recyclerview_activity);
+        setContentView(R.layout.hit100_activity);
 
         rv=(RecyclerView)findViewById(R.id.rv);
 
@@ -38,16 +39,27 @@ public class RecyclerViewActivity extends Activity {
 
     private void initializeData(){
         contents = new ArrayList<>();
-        contents.add(new Content("pdf file 1", "memory te asd", R.drawable.pdf_icon));
-        contents.add(new Content("image file 1", "internal e sad", R.drawable.image_icon));
-        contents.add(new Content("pdf file 2", "memory teasd", R.drawable.pdf_icon));
+        contents.add(ContentHelper.createContent("/sd/OS_lab.pdf"));
+        contents.add(ContentHelper.createContent("/sd/routine.jpg"));
+        contents.add(ContentHelper.createContent("/sd/OS_lab_details.pdf"));
+        contents.add(ContentHelper.createContent("/sd/code.cpp"));
+        contents.add(ContentHelper.createContent("/sd/OS_lab.pdf"));
+        contents.add(ContentHelper.createContent("/sd/OS_lab.pdf"));
+        contents.add(ContentHelper.createContent("/sd/OS_lab.pdf"));
+        contents.add(ContentHelper.createContent("/sd/OS_lab.pdf"));
+        contents.add(ContentHelper.createContent("/sd/OS_lab.pdf"));
+        contents.add(ContentHelper.createContent("/sd/OS_lab.pdf"));
+        contents.add(ContentHelper.createContent("/sd/OS_lab.pdf"));
+        contents.add(ContentHelper.createContent("/sd/routine.jpg"));
+        contents.add(ContentHelper.createContent("/sd/OS_lab_details.pdf"));
+        contents.add(ContentHelper.createContent("/sd/code.cpp"));
     }
 
     private void initializeAdapter(){
         RVAdapter adapter = new RVAdapter(contents, new CustomItemClickListener() {
             @Override
             public void onItemClick(View v, int position) {
-                Toast.makeText(RecyclerViewActivity.this, "Clicked Item: "+position,Toast.LENGTH_SHORT).show();
+                Toast.makeText(Hit100Activity.this, "Clicked Item: "+position,Toast.LENGTH_SHORT).show();
             }
         });
         rv.setAdapter(adapter);

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:padding="16dp"
-    tools:context=".activities.RecyclerViewActivity">
+    tools:context=".activities.Hit100Activity">
 
     <android.support.v7.widget.RecyclerView
         android:layout_height="match_parent"

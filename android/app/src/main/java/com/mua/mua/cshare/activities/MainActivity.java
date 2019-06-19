@@ -9,8 +9,6 @@ import android.widget.Button;
 
 import com.mua.mua.cshare.R;
 
-import java.util.ArrayList;
-
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private Button listB;
@@ -33,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     void openList()
     {
 
-        Intent i=new Intent(MainActivity.this,RecyclerViewActivity.class);
+        Intent i=new Intent(MainActivity.this, Hit100Activity.class);
         startActivity(i);
     }
 }
