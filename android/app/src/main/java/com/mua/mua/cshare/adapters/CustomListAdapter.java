@@ -14,7 +14,7 @@ import com.mua.mua.cshare.observer.CustomItemClickListener;
 
 import java.util.List;
 
-public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ContentViewHolder> {
+public class CustomListAdapter extends RecyclerView.Adapter<CustomListAdapter.ContentViewHolder> {
 
     CustomItemClickListener listener;
 
@@ -36,7 +36,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ContentViewHolder>
 
     List<Content> contents;
 
-    public RVAdapter(List<Content> contents, CustomItemClickListener listener){
+    public CustomListAdapter(List<Content> contents, CustomItemClickListener listener){
         this.contents = contents;
         this.listener = listener;
     }

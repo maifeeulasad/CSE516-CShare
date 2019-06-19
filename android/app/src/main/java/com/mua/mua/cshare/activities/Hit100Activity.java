@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.mua.mua.cshare.R;
-import com.mua.mua.cshare.adapters.RVAdapter;
+import com.mua.mua.cshare.adapters.CustomListAdapter;
 import com.mua.mua.cshare.model.Content;
 import com.mua.mua.cshare.model.ContentHelper;
 import com.mua.mua.cshare.observer.CustomItemClickListener;
@@ -56,7 +56,7 @@ public class Hit100Activity extends Activity {
     }
 
     private void initializeAdapter(){
-        RVAdapter adapter = new RVAdapter(contents, new CustomItemClickListener() {
+        CustomListAdapter adapter = new CustomListAdapter(contents, new CustomItemClickListener() {
             @Override
             public void onItemClick(View v, int position) {
                 Toast.makeText(Hit100Activity.this, "Clicked Item: "+position,Toast.LENGTH_SHORT).show();

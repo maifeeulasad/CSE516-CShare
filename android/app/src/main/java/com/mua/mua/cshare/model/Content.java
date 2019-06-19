@@ -32,16 +32,13 @@ public class Content {
 
     public Content(File file,int thumbnail)
     {
-
-
         this.name=file.getName();
         this.location=file.getAbsolutePath();
         this.thumbnail=thumbnail;
-
-
     }
 
-    public Content(String name, String location,int thumbnail) {
+    public Content(String name, String location,int thumbnail)
+    {
         this.name = name;
         this.location=location;
         this.thumbnail=thumbnail;
