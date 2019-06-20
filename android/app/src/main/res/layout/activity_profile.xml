@@ -8,17 +8,17 @@
     android:background="@drawable/bggg"
     tools:context=".activities.ProfileActivity">
 
-            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="end"
-                android:layout_margin="5dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/edit"
-                app:civ_border_width="2dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+    <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_margin="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="edit"
+        android:src="@drawable/ic_settings_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/profile_image"
@@ -103,13 +103,12 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginRight="15dp"
                 android:onClick="like"
-                android:src="@drawable/like"
-                app:civ_border_width="2dp" />
+                android:src="@drawable/ic_thumb_up_black_24dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -126,13 +125,13 @@
             android:layout_weight="1"
             android:gravity="center">
 
-            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="15dp"
                 android:onClick="dislike"
-                android:src="@drawable/dislike"
-                app:civ_border_width="2dp" />
+                android:src="@drawable/ic_thumb_down_black_24dp"/>
 
             <TextView
                 android:layout_width="wrap_content"

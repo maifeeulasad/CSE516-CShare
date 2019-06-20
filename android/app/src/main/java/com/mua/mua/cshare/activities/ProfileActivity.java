@@ -1,5 +1,6 @@
 package com.mua.mua.cshare.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -38,6 +39,12 @@ public class ProfileActivity extends AppCompatActivity {
     public void dislike(View view) {
         dislikecount = dislikecount + 1;
         dislike.setText(dislikecount.toString());
+    }
+
+    public void edit(View view) {
+        Intent intent = new Intent(this, navigation.class);
+        startActivity(intent);
+        finish();
     }
 }
 
