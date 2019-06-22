@@ -26,7 +26,7 @@
         <v-list class="pa-0">
           <v-list-tile avatar>
             <v-list-tile-avatar>
-              <img :src="userProfileImageUrl">
+              <img :src="userProfilePhotoUrl">
             </v-list-tile-avatar>
 
             <v-list-tile-content>
@@ -61,7 +61,6 @@
 import firebase from 'firebase'
 export default {
   name: 'Navbar',
-  props: ['userFullName', 'userProfileImageUrl'],
   data () {
     return {
       items: [
@@ -71,8 +70,18 @@ export default {
         { title: 'Reports', icon: 'fas fa-bug', action: '/reports' },
         { title: 'Profile', icon: 'fas fa-user', action: '/profile' },
         { title: 'Sign out', icon: 'fas fa-sign-out-alt', action: '/logout' }
-      ]
+      ],
+      userFullName: 'User',
+      userProfilePhotoUrl: 'https://randomuser.me/api/portraits/men/7.jpg'
     }
+  },
+  mounted () {
+    firebase.database().ref().child('Users').child(firebase.auth().currentUser.uid).once('value').then(function (snapshot) {
+      this.userFullName = (snapshot.val() && snapshot.val().name) || 'User'
+      this.userProfilePhotoUrl = (snapshot.val() && snapshot.val().profilePhotoURL) || 'https://randomuser.me/api/portraits/men/7.jpg'
+    }.bind(this)).catch(function (error) {
+      console.log(error.message)
+    })
   },
   methods: {
     logout: function () {

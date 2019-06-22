@@ -114,11 +114,14 @@ public class RegisterActivity extends AppCompatActivity {
                                     .getReference().child("Users").child(user.getUid());
 
                             HashMap<String, Object> info = new HashMap<>();
-                            info.put("Uid", user.getUid());
-                            info.put("Name", name);
-                            info.put("Email", email);
-                            info.put("TwoStepVerificationEnabled", false);
-                            info.put("ProfilePhotoURL", "https://firebasestorage.googleapis.com/v0/b/gravity-a3484.appspot.com/o/profile_pics%2Fdefault_boy.jpg?alt=media&token=99040a9f-6c35-4e76-bef6-5ebf05e036d5");
+			    info.put("bio", "Hey! I am using CShare");
+                            info.put("email", email);
+                            info.put("isAdmin", false);
+                            info.put("name", name);
+			    info.put("phoneNumber", "Not Provided");
+                            info.put("profilePhotoURL", "https://firebasestorage.googleapis.com/v0/b/cshare-9ab86.appspot.com/o/Profile_Images%2Fdefault.jpg?alt=media&token=3bced513-3e12-4fb8-8f4d-a62fa325c61d");
+                            info.put("totalDownVote", 0);
+                            info.put("totalUpVote", 0);
                             // TODO: Add more info
                             reference.setValue(info);
 

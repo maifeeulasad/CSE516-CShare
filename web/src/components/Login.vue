@@ -47,7 +47,17 @@ export default {
     login: function () {
       let e = []
       firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(function (user) {
-        location.reload()
+        firebase.database().ref('Users').child(user.user.uid).once('value').then(function (snapshot) {
+          if (snapshot.val().isAdmin === false) {
+            firebase.auth().signOut()
+            location.reload()
+          } else {
+            location.reload()
+          }
+        }).catch(function () {
+          firebase.auth().signOut()
+          location.reload()
+        })
       }).catch(function (error) {
         e.push(error.message)
       })

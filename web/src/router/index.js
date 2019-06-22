@@ -2,8 +2,13 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import firebase from 'firebase'
 
-import Dashboard from '@/components/Dashboard'
 import Login from '@/components/Login'
+import Logout from '@/components/Logout'
+import Dashboard from '@/components/Dashboard'
+import Users from '@/components/Users'
+import Files from '@/components/Files'
+import Reports from '@/components/Reports'
+import Profile from '@/components/Profile'
 
 Vue.use(Router)
 
@@ -18,6 +23,19 @@ let router = new Router({
       redirect: '/login'
     },
     {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/logout',
+      name: 'Logout',
+      component: Logout,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
       path: '/dashboard',
       name: 'Dashboard',
       component: Dashboard,
@@ -26,9 +44,36 @@ let router = new Router({
       }
     },
     {
-      path: '/login',
-      name: 'Login',
-      component: Login
+      path: '/users',
+      name: 'Users',
+      component: Users,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/files',
+      name: 'Files',
+      component: Files,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/reports',
+      name: 'Reports',
+      component: Reports,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/profile',
+      name: 'Profile',
+      component: Profile,
+      meta: {
+        requiresAuth: true
+      }
     }
   ]
 })

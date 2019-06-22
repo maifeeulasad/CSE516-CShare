@@ -71,8 +71,7 @@ public class WelcomeActivity extends AppCompatActivity implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        openMain();
-
+        // openMain()
     }
 
 
